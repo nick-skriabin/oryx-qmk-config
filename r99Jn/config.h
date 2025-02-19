@@ -1,7 +1,9 @@
 /*
   Set any config.h overrides for your specific keymap here.
-  See config.h options at https://docs.qmk.fm/#/config_options?id=the-configh-file
+  See config.h options at
+  https://docs.qmk.fm/#/config_options?id=the-configh-file
 */
+#define CHORDAL_HOLD
 
 #undef TAPPING_TERM
 #define TAPPING_TERM 280
@@ -17,7 +19,9 @@
 #define HOLD_ON_OTHER_KEY_PRESS
 #define SERIAL_NUMBER "r99Jn/YnX7qb"
 #define LAYER_STATE_8BIT
-#define HCS(report) host_consumer_send(record->event.pressed ? report : 0); return false
+#define HCS(report)                                                            \
+  host_consumer_send(record->event.pressed ? report : 0);                      \
+  return false
 
 #define TAPPING_TERM_PER_KEY
 #define RGB_MATRIX_STARTUP_SPD 60
