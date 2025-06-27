@@ -3,6 +3,8 @@
 #undef TAPPING_TERM
 #define TAPPING_TERM 280
 
+#define RETRO_TAPPING
+
 #define PERMISSIVE_HOLD
 
 #define COMBO_TERM 35
@@ -16,7 +18,7 @@
 #define NO_AUTO_SHIFT_TAB
 #define NO_AUTO_SHIFT_SPECIAL
 #define NO_AUTO_SHIFT_NUMERIC
-#define SERIAL_NUMBER "Yl69a/Kr4M3A"
+#define SERIAL_NUMBER "Yl69a/lb5ddz"
 #define LAYER_STATE_8BIT
 #define COMBO_COUNT 5
 #define HCS(report) host_consumer_send(record->event.pressed ? report : 0); return false
